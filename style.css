@@ -1248,6 +1248,35 @@ footer {
 
 .fab-whatsapp:hover { transform: scale(1.1) translateY(-5px); }
 
+/* Phone FAB */
+.fab-phone {
+    position: fixed;
+    bottom: 105px;
+    right: 30px;
+    background: #000;
+    border: 1px solid var(--text-accent);
+    color: var(--text-accent);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    z-index: 1000;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.fab-phone:hover { transform: scale(1.1) translateY(-5px); background: var(--text-accent); color: #000; }
+
+@media (max-width: 768px) {
+    .fab-phone { width: 48px; height: 48px; font-size: 20px; bottom: 76px; right: 16px; }
+}
+
+@media (max-width: 480px) {
+    .fab-phone { width: 44px; height: 44px; font-size: 18px; bottom: 69px; right: 14px; }
+}
+
 /* --- About Us Page Cinematic Styles --- */
 .about-hero-cinematic {
     height: 85vh;
